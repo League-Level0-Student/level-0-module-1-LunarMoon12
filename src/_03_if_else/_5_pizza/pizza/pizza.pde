@@ -15,13 +15,13 @@ fill(#F5DD85);
   ellipse(250,300,365,365);
 }
 void draw() {
-  if (mousePressed){
+  if (mousePressed && mouseButton == LEFT){
   image(pepperoni,mouseX,mouseY);
   }
-  if (mousePressed){
-  image(mushroom,100,300);
+  if (mousePressed && mouseButton == RIGHT){
+  image(mushroom,mouseX,mouseY);
   }
-  if (mousePressed){
-  image(olive,320,300);
+  if (mousePressed && mouseButton == CENTER){
+  image(olive,mouseX,mouseY);
   }
 }
