@@ -48,13 +48,15 @@ public class RobotInSpace extends KeyboardAdapter {
 		System.out.println(keyPressed);
 		if (keyPressed == 37) {
 			rob.setAngle(90);
-			rob.move(30);
+			rob.move(-30);
 		}
 		// 6. If right is pressed, move the Robot right.
 		System.out.println(keyPressed);
-		
+		if (keyPressed == 39) {
+		rob.setAngle(90);
+		rob.move(30);
 		// 7. Run your program and move the Robot to R2-D2 for a surprise!
-		
+		}	
 	}
 
 	private void checkIfR2D2Found() {
